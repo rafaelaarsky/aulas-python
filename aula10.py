@@ -1,4 +1,5 @@
 # formatando com a função/método format()
+#quando uma função está dentro de um objeto ela é chamda de método
 a = 'A'
 b = 'B'
 c = 1.1
