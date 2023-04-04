@@ -2,14 +2,16 @@
 
 numero_str = input("digite um número inteiro: ")
 
+# if numero_str.isdigit():
+
 try:
     numero_int = int(numero_str)
-    if (numero_int % 2) > 0:
+    if (numero_int % 2) != 0:
         print(f'{numero_str} é um número ímpar.')
     else:
         print(f'{numero_str} é um número par.')
 except:
-    print("o item digitado não foi um número inteiro")
+    print("o item digitado não foi um número inteiro.")
 
 print('-' * 50)
 
@@ -29,7 +31,7 @@ try:
     else:
         print("esse horário não existe.")
 except:
-    print("Erro.")
+    print("Erro. Digite somente o valor da HORA no formato de 24h.")
 
 print('-' * 50)
 
@@ -41,7 +43,7 @@ tam = len(nome_usuario)
 
 nome_grande = tam > 6
 nome_medio = 5 <= tam <= 6
-nome_pequeno = 0 < tam < 5
+nome_pequeno = 1 < tam < 5
 
 if nome_grande:
     print("seu nome é grande")
@@ -50,4 +52,4 @@ elif nome_medio:
 elif nome_pequeno:
     print("seu nome é curto")
 else: 
-    print("Erro.")
+    print("Erro. Digite mais de uma letra.")
